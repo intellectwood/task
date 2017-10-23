@@ -1,0 +1,21 @@
+/*这里的“*”是通配符，意思是该页面中所有的元素都会被加上*后面大括号里的样式，
+对应图中页面中所有的标签都有红色的上边框*/
+*{
+  border:1px solid red;
+}
+/*类选择器：这里使用.post-title的方式选中所有具有类名为post-title的元素，这里的样式使他们大小一样，都有绿色的边框*/
+.post-title{
+  background-color: #777;
+  border: 10px solid green;
+}
+
+/*id选择器：这里使用#post的方式选中具有id属性值为post的元素，添加样式，改变它的背景色为白色, 边框为绿色点线*/
+#post{
+  border: 5px dotted green;
+  background-color: #FFF;
+}
+
+/*派生选择器：这里的空格代表元素层级关系，选中了class属性值为“post-meta”的元素包含链接的元素，使用派生选择器会使得你的css代码层次更清晰，更有可读性”*/
+.post-meta a {
+  background-color: blue
+}
